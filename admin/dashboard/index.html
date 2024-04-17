@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="script.js" defer></script>
+
+    <title>Admin Dashboard</title>
+  </head>
+
+  <body>
+    <nav id="nav">
+      <header>
+        <h1 class="icon">
+          <ion-icon name="person-circle-outline"></ion-icon>
+        </h1>
+        <h1 id="username"></h1>
+      </header>
+
+      <div class="pages">
+        <button id="dashboard-btn" class="dashboard page active">
+          <h1 class="icon">
+            <ion-icon name="grid"></ion-icon>
+          </h1>
+          <h1>Dashboard</h1>
+        </button>
+
+        <button id="inventory-btn" class="inventory page">
+          <h1 class="icon">
+            <ion-icon name="cube"></ion-icon>
+          </h1>
+          <h1>Inventory</h1>
+        </button>
+
+        <button id="package-stat-btn" class="package-stat page">
+          <h1 class="icon">
+            <ion-icon name="build"></ion-icon>
+          </h1>
+          <h1>Package Status</h1>
+        </button>
+
+        <button id="messages-btn" class="messages page">
+          <h1 class="icon">
+            <ion-icon name="chatbubble-ellipses"></ion-icon>
+          </h1>
+          <h1>Messages</h1>
+        </button>
+      </div>
+
+      <footer>
+        <h1>Contact us:</h1>
+
+        <div class="socials">
+          <a href="https://facebook.com">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </a>
+
+          <a href="https://facebook.com">
+            <ion-icon name="mail"></ion-icon>
+          </a>
+
+          <a href="https://facebook.com">
+            <ion-icon name="phone-portrait"></ion-icon>
+          </a>
+        </div>
+      </footer>
+    </nav>
+
+    <main>
+      <header>
+        <div class="left">
+          <button id="toggle-nav-button">
+            <ion-icon name="reorder-three"></ion-icon>
+          </button>
+
+          <h1 id="title"></h1>
+        </div>
+
+        <div class="right">
+          <button>
+            <ion-icon name="chatbubble-ellipses"></ion-icon>
+          </button>
+
+          <button id="logout-btn">
+            <ion-icon name="log-out"></ion-icon>
+          </button>
+        </div>
+      </header>
+
+      <div id="content"></div>
+    </main>
+  </body>
+</html>

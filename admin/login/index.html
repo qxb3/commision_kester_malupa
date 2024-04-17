@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="script.js" defer></script>
+
+    <title>Admin Login</title>
+  </head>
+
+  <body>
+    <div class="background"></div>
+
+    <main>
+      <h1 class="title">Login</h1>
+      <div id="err" style="display: none; background-color: red; color: #fff; padding: 1rem; margin-bottom: 1rem;">
+      </div>
+
+      <form id="form" class="form">
+        <input id="username" type="text" placeholder="Enter username" required />
+        <input id="password" type="password" placeholder="Enter password" required />
+
+        <button type="submit">Login</button>
+      </form>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="script.js" defer></script>
+
+    <title>Create Account</title>
+  </head>
+
+  <body>
+    <main>
+      <h1 class="user-icon">
+        <ion-icon name="person-circle-outline"></ion-icon>
+      </h1>
+
+      <div class="title-container">
+        <div class="line"></div>
+        <h1 class="title">Create New Account</h1>
+        <div class="line"></div>
+      </div>
+
+      <form class="form" id="form">
+        <div id="err" style="display: none; background-color: red; padding: 1rem; color: #fff;">
+        </div>
+
+        <div class="flex1">
+          <input id="name" type="text" placeholder="Name" required />
+          <input id="surname" type="text" placeholder="Surname" required />
+        </div>
+
+        <div class="flex2">
+          <input class="num" type="text" placeholder="+63" disabled />
+          <input id="phone" type="number" placeholder="Phone Number" required />
+        </div>
+
+        <div class="flex2">
+          <p>Username</p>
+          <input id="username" type="text" required />
+        </div>
+
+        <div class="flex2">
+          <p>Password</p>
+          <input id="password" type="password" required />
+        </div>
+
+        <div class="flex2">
+          <p>Confirm Password</p>
+          <input id="confirm-password" type="password" required />
+        </div>
+
+        <button id="submit" type="submit">Create Account</button>
+      </form>
+    </main>
+  </body>
+</html>

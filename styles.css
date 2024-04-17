@@ -1,0 +1,14 @@
+:root {
+  --primary: #FBB576;
+  --secondary: #8A6B52;
+}
+
+h1, h2, h3, h4, p, button {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Comfortaa', sans-serif;
+  margin: 0;
+}

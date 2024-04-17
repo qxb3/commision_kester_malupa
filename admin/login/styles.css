@@ -1,0 +1,57 @@
+body {
+  display: grid;
+  place-items: center;
+  margin: 0;
+  min-height: 100vh;
+}
+
+.background {
+  position: absolute;
+  background-image: url('/static/logo.jpg');
+  background-size: cover;
+  background-size: 100vh;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  opacity: 0.6;
+  filter: blur(2px);
+  width: 100%;
+  height: 100vh;
+  z-index: 0;
+}
+
+main {
+  z-index: 1;
+  min-width: 30vw;
+  text-align: center;
+}
+
+main .title {
+  font-size: 34px;
+  font-weight: 900;
+  margin-bottom: 2rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.form input {
+  background-color: #fff;
+  padding: 1.2rem;
+  border: solid 1px black;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.form button {
+  background-color: var(--primary);
+  padding: 1.2rem;
+  border: solid 1px black;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 800;
+  cursor: pointer;
+}
